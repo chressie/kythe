@@ -34,13 +34,10 @@ def kythe_rule_repositories():
     )
 
     maybe(
-        http_archive,
+        github_archive,
+        repo_name = "bazelbuild/rules_go",
+        commit = "fb6d8c47379ce1c352efdf750d5de5412d5109db",
         name = "io_bazel_rules_go",
-        sha256 = "2b1641428dff9018f9e85c0384f03ec6c10660d935b750e3fa1492a281a53b0f",
-        urls = [
-            "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.29.0/rules_go-v0.29.0.zip",
-            "https://github.com/bazelbuild/rules_go/releases/download/v0.29.0/rules_go-v0.29.0.zip",
-        ],
     )
 
     maybe(
