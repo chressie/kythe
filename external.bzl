@@ -34,7 +34,7 @@ load("//kythe/rust/cargo:crates.bzl", "raze_fetch_remote_crates")
 
 def _rule_dependencies():
     go_rules_dependencies()
-    go_register_toolchains(version = "1.17")
+    go_register_toolchains(version = "1.18beta1")
     gazelle_dependencies()
     rules_java_dependencies()
     rules_proto_dependencies()
